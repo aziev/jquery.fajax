@@ -24,17 +24,17 @@
                     url: action,
                     method: method,
                     data: data,
-                    beforeSend: function(){
-                        settings.beforeSend();
+                    beforeSend: function(data){
+                        settings.beforeSend(data);
                     },
-                    success: function(){
-                        settings.success();
+                    success: function(data){
+                        settings.success(data);
                     },
-                    error: function(){
-                        settings.error();
+                    error: function(data){
+                        settings.error(data);
                     },
-                    complete: function(){
-                        settings.complete();
+                    complete: function(data){
+                        settings.complete(data);
                     },
                 });
 

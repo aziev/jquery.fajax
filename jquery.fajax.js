@@ -22,7 +22,7 @@
 
                 $.ajax({
                     url: action,
-                    method: method,
+                    type: method,
                     data: data,
                     beforeSend: function(data){
                         settings.beforeSend(data);

@@ -18,12 +18,14 @@
                 var action = $(this).attr('action');
                 var method = $(this).attr('method');
                 
-                var data = $(this).serialize();
+                var data = new FormData(this);
 
                 $.ajax({
                     url: action,
                     type: method,
                     data: data,
+                    processData: false,
+                    contentType: false,
                     beforeSend: function(data){
                         settings.beforeSend(data);
                     },

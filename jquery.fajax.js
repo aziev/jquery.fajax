@@ -18,7 +18,14 @@
                 var action = $(this).attr('action');
                 var method = $(this).attr('method');
                 
-                var data = new FormData(this);
+                if (method.toUpperCase() == 'GET')
+                {
+                    var data = $(this).serialize();
+                }
+                else
+                {
+                    var data = new FormData(this);
+                }
 
                 $.ajax({
                     url: action,

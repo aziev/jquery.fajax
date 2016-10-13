@@ -1,7 +1,5 @@
 # Fajax
-JQuery plugin for ajaxifying forms. It is wrapper of $.ajax function.
-
-Why you need it? Because it's extra lightweight.
+Extra lightweight jQuery plugin for ajaxifying forms with file support. It's wrapper of $.ajax function.
 
 ## Usage
 Just write your form markup like usually:

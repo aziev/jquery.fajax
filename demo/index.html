@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery.fajax Demo</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.css">
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+	<div class="ui container">
+
+		<div class="ui form">
+			<form action="https://httpbin.org/post" method="post">
+
+				<div class="field">
+					<label>Fullname</label>
+					<input type="text" name="fullname" placeholder="Amon Bower">
+				</div>
+
+				<div class="field">
+					<label>Phone</label>
+					<input type="text" name="phone" placeholder="+7 (999) 123-456-789">
+				</div>
+
+				<div class="field">
+					<label>Text</label>
+					<textarea name="text" placeholder="Enter your comments"></textarea>
+				</div>
+
+				<div class="field">
+				    <label for="attach" style="color: #fff" class="ui green button">Attach file</label>
+				    <input type="file" name="attach" id="attach" style="display:none">
+				</div>
+
+				<div class="inline fields">
+					<label>Choose your gender</label>
+					<div class="field">
+					  <div class="ui radio checkbox">
+					    <input type="radio" value="male" name="gender" checked="checked">
+					    <label for="gender">Male</label>
+					  </div>
+					</div>
+					<div class="field">
+					  <div class="ui radio checkbox">
+					    <input type="radio" value="female" name="gender">
+					    <label>Female</label>
+					  </div>
+					</div>
+				</div>
+
+				<div class="ui segment">
+					<div class="field">
+					  <div class="ui toggle checkbox">
+					    <input type="checkbox" name="checkbox" tabindex="0" class="hidden">
+					    <label>Do you wana test the checkbox (toggle check)?</label>
+					  </div>
+					</div>
+				</div>
+
+				<div class="field">
+					<button type="submit" class="ui fluid big submit button">Send form</button>
+				</div>
+			</form>
+			<div class="ui hidden message">
+				<div class="header">Form Completed!</div>
+				<p>Your form successfully sent!</p>
+			</div>
+		</div>
+
+	</div>
+
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.2/jquery.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.js"></script>
+	<script src="jquery.fajax.js"></script>
+	<script src="main.js"></script>
+	
+</body>
+</html>

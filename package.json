@@ -1,0 +1,26 @@
+{
+  "name": "jquery.fajax",
+  "version": "1.0.0",
+  "description": "JQuery plugin for AJAXifying forms",
+  "main": "jquery.fajax.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aziev/jquery.fajax.git"
+  },
+  "keywords": [
+    "jquery",
+    "ajax",
+    "form"
+  ],
+  "author": "Mikail Aziev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aziev/jquery.fajax/issues"
+  },
+  "homepage": "https://github.com/aziev/jquery.fajax#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^2.0.0"
+  }
+}

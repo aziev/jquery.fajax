@@ -3,6 +3,18 @@ JQuery plugin for ajaxifying forms with file support. It's wrapper of `$.ajax` f
 
 It's extra lightweight: just 345 bytes of minified version.
 
+## Installation
+
+You can install it via npm:
+```
+npm install jquery.fajax
+```
+Or clone this repository:
+```
+git clone https://github.com/aziev/jquery.fajax
+```
+Or [download](https://github.com/aziev/jquery.fajax/archive/master.zip) it directly.
+
 ## Usage
 Just write your form markup like usually:
 ```

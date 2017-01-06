@@ -9,15 +9,25 @@
                 e.preventDefault();
 
                 var action = $(this).attr('action');
-                var method = $(this).attr('method');
-                
-                if (method.toUpperCase() == 'GET')
+                var method;
+                var data;
+
+                if ($(this).attr('method') === undefined)
                 {
-                    var data = $(this).serialize();
+                    method = 'GET';
                 }
                 else
                 {
-                    var data = new FormData(this);
+                    method = $(this).attr('method').toUpperCase();
+                }
+                
+                if (method === 'GET')
+                {
+                    data = $(this).serialize();
+                }
+                else
+                {
+                    data = new FormData(this);
                 }
 
                 var extended_options = $.extend(options, {

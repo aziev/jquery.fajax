@@ -1,4 +1,4 @@
-$(document).ready(function(argument) {
+$(document).ready(function() {
 	
 	$('form').fajax({
 		beforeSend: function(){
@@ -6,17 +6,16 @@ $(document).ready(function(argument) {
 			$('.message,.form').removeClass('error success');
 			$('.message').removeClass('hidden');
 		},
-	    complete: function(){
+	    complete: function(data){
+	    	console.log(data);
 	        $('.form').removeClass('loading');
 	    },
-	    success: function(data){
-	    	console.log(data);
+	    success: function(){
 	    	$('.message,.form').addClass('success');
 	    	$('.message .header').text('Form Completed!');
 	    	$('.message p').text('Your form successfully sent!');
 	    },
-	    error: function(data){
-	    	console.log(data);
+	    error: function(){
 	    	$('.message,.form').addClass('error');
 	    	$('.message .header').text('Action Forbidden!');
 	    	$('.message p').text('When sending a request, the server generated an error :(');

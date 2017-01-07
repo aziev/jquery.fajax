@@ -6,11 +6,11 @@
 
             $(this).on('submit', function(e){
 
-                e.preventDefault();
-
                 var action = $(this).attr('action');
                 var method;
                 var data;
+
+                e.preventDefault();
 
                 if ($(this).attr('method') === undefined)
                 {
@@ -40,6 +40,7 @@
 
                 $.ajax(extended_options);
 
+                this.reset();
             });
 
         });

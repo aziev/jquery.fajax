@@ -3,7 +3,7 @@ JQuery plugin for ajaxifying forms with file support. It's wrapper of `$.ajax` f
 
 It's extra lightweight: just 345 bytes of minified version.
 
-Let's try the [demo](https://cdn.rawgit.com/aziev/jquery.fajax/master/demo/index.html).
+Let's try the [demo](https://cdn.rawgit.com/aziev/jquery.fajax/5113ae349863aea4d26d01ee741c6c75b620971b/demo/index.html).
 
 ## Installation
 

@@ -10,7 +10,8 @@
   "keywords": [
     "jquery",
     "ajax",
-    "form"
+    "form",
+    "upload"
   ],
   "author": "Mikail Aziev",
   "license": "ISC",

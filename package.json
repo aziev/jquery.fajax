@@ -1,6 +1,6 @@
 {
   "name": "jquery.fajax",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "JQuery plugin for AJAXifying forms",
   "main": "jquery.fajax.js",
   "repository": {

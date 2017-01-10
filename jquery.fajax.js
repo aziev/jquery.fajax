@@ -6,20 +6,21 @@
 
             $(this).on('submit', function(e) {
 
-                var action = $(this).attr('action');
+                var $form = $(this);
+                var action = $form.attr('action');
                 var method;
                 var data;
 
                 e.preventDefault();
 
-                if ($(this).attr('method') === undefined) {
+                if ($form.attr('method') === undefined) {
                     method = 'GET';
                 } else {
-                    method = $(this).attr('method').toUpperCase();
+                    method = $form.attr('method').toUpperCase();
                 }
 
                 if (method === 'GET') {
-                    data = $(this).serialize();
+                    data = $form.serialize();
                 } else {
                     data = new FormData(this);
                 }

@@ -1,10 +1,10 @@
-;(function ($) {
+;(function($) {
 
-    $.fn.fajax = function (options) {
+    $.fn.fajax = function(options) {
 
         return this.each(function() {
 
-            $(this).on('submit', function(e){
+            $(this).on('submit', function(e) {
 
                 var action = $(this).attr('action');
                 var method;
@@ -12,21 +12,15 @@
 
                 e.preventDefault();
 
-                if ($(this).attr('method') === undefined)
-                {
+                if ($(this).attr('method') === undefined) {
                     method = 'GET';
-                }
-                else
-                {
+                } else {
                     method = $(this).attr('method').toUpperCase();
                 }
-                
-                if (method === 'GET')
-                {
+
+                if (method === 'GET') {
                     data = $(this).serialize();
-                }
-                else
-                {
+                } else {
                     data = new FormData(this);
                 }
 

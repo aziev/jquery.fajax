@@ -19,7 +19,7 @@ Or [download](https://github.com/aziev/jquery.fajax/archive/master.zip) it direc
 
 ## Usage
 Just write your form markup like usually:
-```
+```html
 <form action="http://example.com/action.php" method="post">
     <input type="text" name="user">
     <input type="email" name="email">
@@ -27,7 +27,7 @@ Just write your form markup like usually:
 </form>
 ```
 and then call the plugin:
-```
+```javascript
 $('form').fajax({
     success: function(){
         alert('The form was successfully sent');

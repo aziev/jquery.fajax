@@ -25,7 +25,7 @@
                     data = new FormData(this);
                 }
 
-                var extended_options = $.extend(options, {
+                $.extend(options, {
                     url: action,
                     type: method,
                     data: data,
@@ -33,7 +33,7 @@
                     contentType: false,
                 });
 
-                $.ajax(extended_options);
+                $.ajax(options);
 
                 this.reset();
             });

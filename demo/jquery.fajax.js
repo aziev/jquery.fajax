@@ -25,17 +25,21 @@
                     data = new FormData(this);
                 }
 
+                var complete = options.complete;
+
                 $.extend(options, {
                     url: action,
                     type: method,
                     data: data,
                     processData: false,
                     contentType: false,
+                    complete: function(data) {
+                        cache.complete(data);
+                        $form[0].reset();
+                    },
                 });
 
                 $.ajax(options);
-
-                this.reset();
             });
 
         });

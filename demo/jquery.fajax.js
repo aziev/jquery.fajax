@@ -34,7 +34,7 @@
                     processData: false,
                     contentType: false,
                     complete: function(data) {
-                        cache.complete(data);
+                        complete(data);
                         $form[0].reset();
                     },
                 });

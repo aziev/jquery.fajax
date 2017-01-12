@@ -2,6 +2,10 @@
 
     $.fn.fajax = function(options) {
 
+        options = $.extend({
+            resetOnComplete: true,
+        }, options);
+
         return this.each(function() {
 
             $(this).on('submit', function(e) {
@@ -35,7 +39,9 @@
                     contentType: false,
                     complete: function(data) {
                         complete(data);
-                        $form[0].reset();
+                        if (options.resetOnComplete) {
+                            $form[0].reset();
+                        }
                     },
                 });
 

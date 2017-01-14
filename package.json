@@ -14,7 +14,7 @@
     "upload"
   ],
   "author": "Mikail Aziev",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/aziev/jquery.fajax/issues"
   },

@@ -2,7 +2,7 @@
   "name": "jquery.fajax",
   "version": "1.1.3",
   "description": "JQuery plugin for AJAXifying forms",
-  "main": "jquery.fajax.js",
+  "main": "dist/jquery.fajax.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/aziev/jquery.fajax.git"

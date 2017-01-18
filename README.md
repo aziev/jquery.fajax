@@ -41,3 +41,7 @@ Fajax has all parameters of [`$.ajax`](http://api.jquery.com/jquery.ajax/), exce
 
 It has one own parameter as well:
 - **resetOnComplete** (boolean, default: true). Specifies clear or not form elements after upload.
+
+## Issues
+
+If you found a bug or need a feature please [write issue](https://github.com/aziev/jquery.fajax/issues) on Github.

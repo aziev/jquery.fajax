@@ -40,7 +40,7 @@ That's all! It will send the form without page reloading and alert message on su
 Fajax has all parameters of [`$.ajax`](http://api.jquery.com/jquery.ajax/), except `url`, `type`, `data`, `processData` and `contentType`. You should set `url`, `type` and `data` in your markup.
 
 It has one own parameter as well:
-- **resetOnComplete** (boolean, default: true). Specifies clear or not form elements after upload.
+- **resetOnSuccess** (boolean, default: true). Specifies clear or not form elements after successful upload.
 
 ## Issues
 

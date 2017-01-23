@@ -3,7 +3,7 @@
     $.fn.fajax = function(options) {
 
         options = $.extend({
-            resetOnComplete: true,
+            resetOnSuccess: true,
         }, options);
 
         return this.each(function() {
@@ -29,7 +29,7 @@
                     data = new FormData(this);
                 }
 
-                var complete = options.complete;
+                var success = options.success;
 
                 $.extend(options, {
                     url: action,
@@ -37,9 +37,9 @@
                     data: data,
                     processData: false,
                     contentType: false,
-                    complete: function(data) {
-                        complete(data);
-                        if (options.resetOnComplete) {
+                    success: function(data) {
+                        success(data);
+                        if (options.resetOnSuccess) {
                             $form[0].reset();
                         }
                     },
